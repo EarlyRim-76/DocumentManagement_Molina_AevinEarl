@@ -114,25 +114,85 @@ The primary objective of the Document Management System is to demonstrate the de
 - AI helps a developer to debug Issue
 - AI helps as the new stack overflow a guide specially asking questions related to some code.
 
-## 11. Instructions for running the app
-- 1. Clone the repository :
-git clone https://github.com/username/DocumentManagement.git
+# 11. Instructions for Running the Application
 
-- 2. Navigate to the project :
-cd DocumentManagement
+## Prerequisites
 
-- 3. Restore dependencies :
+Before running the application, make sure you have installed:
+
+- Git
+- .NET SDK version specified in `global.json`
+- SQL Server or SQL Server LocalDB
+- Visual Studio or Visual Studio Code (optional)
+
+# Installation and Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/EarlyRim-76/DocumentManagement_Molina_AevinEarl.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd DocumentManagement_Molina_AevinEarl
+```
+
+### 3. Configure your local database
+
+Open `appsettings.json` and update the database connection string.
+
+Replace the SQL Server instance name with your local SQL Server or LocalDB instance and specify your preferred database name.
+
+Make sure your SQL Server instance is running before proceeding.
+
+### 4. Restore project dependencies
+
+```bash
 dotnet restore
+```
 
-- 4. Build the application :
+This automatically downloads the required NuGet packages defined in the project files.
+
+### 5. Apply database migrations
+
+If EF Core migrations are included in the repository, execute:
+
+```bash
+dotnet ef database update
+```
+
+### 6. Build the application
+
+```bash
 dotnet build
+```
 
-- 5. Run automated tests :
+### 7. Run automated tests
+
+```bash
 dotnet test
+```
 
-- 6. Run the API : 
-dotnet run --project DocumentManagement
+### 8. Run the API
 
+```bash
+dotnet run --project DocumentManagement_Molina_AevinEarl
+```
+
+The application should now be running using the configured ASP.NET Core launch settings.
+
+## Notes
+
+- Ensure that your database connection string is configured correctly.
+- Do not commit personal database credentials or sensitive connection strings to the repository.
+- NuGet dependencies are restored automatically through `dotnet restore`.
+- If the Entity Framework Core CLI is not installed, install it using:
+
+```bash
+dotnet tool install --global dotnet-ef
+```
 
 
 The application emphasizes separation of concerns, secure file handling, proper validation, consistent HTTP responses, and automated testing.
