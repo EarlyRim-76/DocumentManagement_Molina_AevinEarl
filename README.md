@@ -115,22 +115,22 @@ The primary objective of the Document Management System is to demonstrate the de
 - AI helps as the new stack overflow a guide specially asking questions related to some code.
 
 ## 11. Instructions for running the app
-- 1. Clone the repository
+- 1. Clone the repository :
 git clone https://github.com/username/DocumentManagement.git
 
-- 2. Navigate to the project
+- 2. Navigate to the project :
 cd DocumentManagement
 
-- 3. Restore dependencies
+- 3. Restore dependencies :
 dotnet restore
 
-- 4. Build the application
+- 4. Build the application :
 dotnet build
 
-- 5. Run automated tests
+- 5. Run automated tests :
 dotnet test
 
-- 6. Run the API
+- 6. Run the API : 
 dotnet run --project DocumentManagement
 
 
