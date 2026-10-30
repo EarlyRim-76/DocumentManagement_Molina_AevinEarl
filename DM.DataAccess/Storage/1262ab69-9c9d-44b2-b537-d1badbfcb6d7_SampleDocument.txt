@@ -1,0 +1,11 @@
+Sample Document
+
+Document Title: Practice API Upload Test
+
+Description:
+This document is created to test the multipart/form-data file upload endpoint.
+
+Purpose:
+Testing file upload, local file storage, and document metadata persistence.
+
+This file contains sample content only.

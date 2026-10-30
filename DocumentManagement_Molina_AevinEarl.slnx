@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="DM.Business/DM.Business.csproj" />
+  <Project Path="DM.DataAccess/DM.DataAccess.csproj" />
+  <Project Path="DM.Models/DM.Models.csproj" />
+  <Project Path="DM.Tests/DM.Tests.csproj" />
+  <Project Path="DM.Utility/DM.Utility.csproj" />
+  <Project Path="DocumentManagement_Molina_AevinEarl/DocumentManagement_Molina_AevinEarl.csproj" />
+</Solution>

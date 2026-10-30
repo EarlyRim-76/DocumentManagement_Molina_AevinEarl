@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Security.Cryptography.Pkcs" Version="10.0.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DM.DataAccess\DM.DataAccess.csproj" />
+    <ProjectReference Include="..\DM.Models\DM.Models.csproj" />
+    <ProjectReference Include="..\DM.Utility\DM.Utility.csproj" />
+  </ItemGroup>
+
+</Project>
